@@ -1,6 +1,7 @@
 using IT_ELEC1C_3ITE__GRP6.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using System;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,6 +26,10 @@ else
 {
     app.UseExceptionHandler("/Home/Error");
 }
+
+var context = app.Services.CreateScope().ServiceProvider.GetRequiredService<ApplicationDbContext>();
+context.Database.EnsureCreated();
+
 app.UseStaticFiles();
 
 app.UseRouting();
