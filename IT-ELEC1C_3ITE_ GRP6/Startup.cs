@@ -1,9 +1,10 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using IT_ELEC1C_3ITE__GRP6.Models;
+using InnoNet.Data.Models;
 using IT_ELEC1C_3ITE__GRP6.Services;
 using Microsoft.AspNetCore.Mvc;
 using InnoNet.Data;
+using InnoNet.Service;
 
 namespace IT_ELEC1C_3ITE__GRP6
 {
@@ -58,6 +59,7 @@ namespace IT_ELEC1C_3ITE__GRP6
 
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
+            services.AddScoped<IForum, ForumService>();
 
             services.AddMvc().SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Version_3_0); ;
 

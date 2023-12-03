@@ -1,19 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Text;
 using System.Text.Encodings.Web;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
-using IT_ELEC1C_3ITE__GRP6.Models;
 using IT_ELEC1C_3ITE__GRP6.Models.ManageViewModels;
 using IT_ELEC1C_3ITE__GRP6.Services;
-using InnoNet.Data;
+using InnoNet.Data.Models;
 
 namespace IT_ELEC1C_3ITE__GRP6.Controllers
 {

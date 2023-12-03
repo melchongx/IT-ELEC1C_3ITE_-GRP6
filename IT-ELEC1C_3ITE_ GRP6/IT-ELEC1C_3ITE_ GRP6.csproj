@@ -23,6 +23,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\InnoNet.Data\InnoNet.Data.csproj" />
+    <ProjectReference Include="..\InnoNet.Service\InnoNet.Service.csproj" />
   </ItemGroup>
 
 </Project>

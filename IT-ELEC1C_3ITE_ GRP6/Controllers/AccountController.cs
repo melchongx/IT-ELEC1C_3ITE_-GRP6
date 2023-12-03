@@ -3,10 +3,9 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using IT_ELEC1C_3ITE__GRP6.Models;
 using IT_ELEC1C_3ITE__GRP6.Models.AccountViewModels;
 using IT_ELEC1C_3ITE__GRP6.Services;
-using InnoNet.Data;
+using InnoNet.Data.Models;
 
 namespace IT_ELEC1C_3ITE__GRP6.Controllers
 {
