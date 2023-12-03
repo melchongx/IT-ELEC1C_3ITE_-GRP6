@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using IT_ELEC1C_3ITE__GRP6.Data;
 using IT_ELEC1C_3ITE__GRP6.Models;
 using IT_ELEC1C_3ITE__GRP6.Services;
+using Microsoft.AspNetCore.Mvc;
 
 namespace IT_ELEC1C_3ITE__GRP6
 {
@@ -56,7 +57,7 @@ namespace IT_ELEC1C_3ITE__GRP6
             {
                 // Cookie settings
                 options.Cookie.HttpOnly = true;
-                options.Cookie.Expiration = TimeSpan.FromDays(150);
+                options.ExpireTimeSpan = TimeSpan.FromDays(150);
                 options.LoginPath = "/Account/Login"; // If the LoginPath is not set here, ASP.NET Core will default to /Account/Login
                 options.LogoutPath = "/Account/Logout"; // If the LogoutPath is not set here, ASP.NET Core will default to /Account/Logout
                 options.AccessDeniedPath = "/Account/AccessDenied"; // If the AccessDeniedPath is not set here, ASP.NET Core will default to /Account/AccessDenied
@@ -66,7 +67,13 @@ namespace IT_ELEC1C_3ITE__GRP6
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
 
-            services.AddMvc();
+            services.AddMvc().SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Version_3_0); ;
+
+            // Disable endpoint routing
+            services.Configure<MvcOptions>(options =>
+            {
+                options.EnableEndpointRouting = false;
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

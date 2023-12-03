@@ -13,7 +13,6 @@ using Microsoft.Extensions.Options;
 using IT_ELEC1C_3ITE__GRP6.Models;
 using IT_ELEC1C_3ITE__GRP6.Models.AccountViewModels;
 using IT_ELEC1C_3ITE__GRP6.Services;
-using IT_ELEC1C_3ITE__GRP6.Models.AccountViewModels;
 
 namespace IT_ELEC1C_3ITE__GRP6.Controllers
 {
