@@ -1,6 +1,7 @@
 ﻿using InnoNet.Data;
 using InnoNet.Data.Models;
 using IT_ELEC1C_3ITE__GRP6.Models.ForumModels;
+using IT_ELEC1C_3ITE__GRP6.Models.PostModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 
@@ -34,9 +35,23 @@ namespace IT_ELEC1C_3ITE__GRP6.Controllers
         public IActionResult Topic(int id)
         {
             var forum = _forumService.GetById(id);
-            var posts = _postService.GetFilteredPosts(id);
+            var posts = _postService.GetPostsByForum(id);
 
-            var postListings = 
+            var postListings = posts.Select(post => new PostListingModel
+            {
+                Id = post.Id,
+                AuthorId = post.User.Id,
+                AuthorRating = post.User.Rating,
+                Title = post.Title,
+                DatePosted = post.Created.ToString(),
+                RepliesCount = post.Replies.Count(),
+                Forum = BuildForumListing(post)
+            });
+        }
+
+        private ForumListingModel BuildForumListing(Post post)
+        {
+            throw new NotImplementedException();
         }
     }
 }

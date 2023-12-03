@@ -1,9 +1,7 @@
 ﻿using InnoNet.Data.Models;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using InnoNet.Data.Models;
 
 namespace InnoNet.Data
 {
@@ -12,8 +10,7 @@ namespace InnoNet.Data
         Post GetById(int id);
         IEnumerable<Post> GetAll();
         IEnumerable<Post> GetFilteredPosts(string searchQuery);
-
-
+        IEnumerable<Post> GetPostsByForum(int id);
         Task Add(Post post);
         Task Delete(int id);
         Task EditPostContent(int id, string newContent);
