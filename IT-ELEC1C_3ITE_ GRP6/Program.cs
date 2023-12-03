@@ -1,4 +1,3 @@
-using IT_ELEC1C_3ITE__GRP6.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System;

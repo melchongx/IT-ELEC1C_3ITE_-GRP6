@@ -1,18 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Claims;
-using System.Threading.Tasks;
+﻿using System.Security.Claims;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
 using IT_ELEC1C_3ITE__GRP6.Models;
 using IT_ELEC1C_3ITE__GRP6.Models.AccountViewModels;
 using IT_ELEC1C_3ITE__GRP6.Services;
+using InnoNet.Data;
 
 namespace IT_ELEC1C_3ITE__GRP6.Controllers
 {

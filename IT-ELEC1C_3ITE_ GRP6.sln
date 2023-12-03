@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IT-ELEC1C_3ITE_ GRP6", "IT-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InnoNet.Data", "InnoNet.Data\InnoNet.Data.csproj", "{7CDA3E37-9A78-4227-BF8D-2D5BD8112E58}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InnoNet.Service", "InnoNet.Service\InnoNet.Service.csproj", "{3F2C281F-A41F-47AE-82FF-18EFD753710B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{7CDA3E37-9A78-4227-BF8D-2D5BD8112E58}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CDA3E37-9A78-4227-BF8D-2D5BD8112E58}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CDA3E37-9A78-4227-BF8D-2D5BD8112E58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F2C281F-A41F-47AE-82FF-18EFD753710B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F2C281F-A41F-47AE-82FF-18EFD753710B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F2C281F-A41F-47AE-82FF-18EFD753710B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F2C281F-A41F-47AE-82FF-18EFD753710B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
