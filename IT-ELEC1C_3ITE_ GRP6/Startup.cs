@@ -60,6 +60,7 @@ namespace IT_ELEC1C_3ITE__GRP6
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
             services.AddScoped<IForum, ForumService>();
+            services.AddScoped<IPost, PostService>();
 
             services.AddMvc().SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Version_3_0); ;
 
