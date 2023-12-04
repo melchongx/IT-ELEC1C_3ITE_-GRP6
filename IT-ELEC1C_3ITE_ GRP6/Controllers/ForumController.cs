@@ -35,7 +35,7 @@ namespace IT_ELEC1C_3ITE__GRP6.Controllers
         public IActionResult Topic(int id)
         {
             var forum = _forumService.GetById(id);
-            var posts = _postService.GetPostsByForum(id);
+            var posts = forum.Posts;
 
             var postListings = posts.Select(post => new PostListingModel
             {
@@ -47,11 +47,33 @@ namespace IT_ELEC1C_3ITE__GRP6.Controllers
                 RepliesCount = post.Replies.Count(),
                 Forum = BuildForumListing(post)
             });
+
+            var model = new ForumTopicModel
+            {
+                Posts = postListings,
+                Forum = BuildForumListing(forum)
+            };
+
+            return View(model);
         }
 
         private ForumListingModel BuildForumListing(Post post)
         {
-            throw new NotImplementedException();
+            var forum = post.Forum;
+            return BuildForumListing(forum);
         }
+
+        private ForumListingModel BuildForumListing(Forum forum)
+        {
+
+            return new ForumListingModel
+            {
+                Id = forum.Id,
+                Name = forum.Title,
+                Description = forum.Description,
+                ImageUrl = forum.ImageUrl
+            };
+        }
+
     }
 }
