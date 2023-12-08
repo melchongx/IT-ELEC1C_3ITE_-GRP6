@@ -29,7 +29,7 @@ namespace InnoNet.Data.Migrations
                 name: "ProfileImageUrl",
                 table: "AspNetUsers",
                 type: "nvarchar(max)",
-                nullable: false,
+                nullable: true,
                 defaultValue: "");
 
             migrationBuilder.AddColumn<int>(

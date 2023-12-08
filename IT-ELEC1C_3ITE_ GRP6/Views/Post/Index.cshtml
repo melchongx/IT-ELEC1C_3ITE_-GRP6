@@ -11,7 +11,7 @@
     @Model.PostContent
 </div>
 
-@if (Model.Replies.Any())
+@if (Model.Replies != null && Model.Replies.Any())
 {
     foreach (var reply in Model.Replies)
     {
