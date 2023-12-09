@@ -46,13 +46,13 @@ namespace IT_ELEC1C_3ITE__GRP6.Controllers
                 Title = post.Title,
                 DatePosted = post.Created.ToString(),
                 RepliesCount = post.Replies.Count(),
-                Forum = BuildForumListing(post)
+                //Forum = BuildForumListing(post)
             });
 
             var model = new ForumTopicModel
             {
                 Posts = postListings,
-                Forum = BuildForumListing(forum)
+                //Forum = BuildForumListing(forum)
             };
 
             return View(model);

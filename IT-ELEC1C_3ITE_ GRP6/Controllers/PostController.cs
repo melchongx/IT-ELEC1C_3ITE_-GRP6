@@ -17,7 +17,7 @@ namespace IT_ELEC1C_3ITE__GRP6.Controllers
         public IActionResult Index(int id)
         {
             var post = _postService.GetById(id);
-            var replies = BuildPostReplies(post.Replies);
+           // var replies = BuildPostReplies(post.Replies);
             var model = new PostIndexModel
             {
                 Id = post.Id,
@@ -28,7 +28,7 @@ namespace IT_ELEC1C_3ITE__GRP6.Controllers
                 AuthorRating = post.User.Rating,
                 Created = post.Created,
                 PostContent = post.Content,
-                Replies = replies
+                //Replies = replies
             };
             return View(model);
         }

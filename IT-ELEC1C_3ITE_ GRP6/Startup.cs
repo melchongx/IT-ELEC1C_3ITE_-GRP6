@@ -5,6 +5,7 @@ using IT_ELEC1C_3ITE__GRP6.Services;
 using Microsoft.AspNetCore.Mvc;
 using InnoNet.Data;
 using InnoNet.Service;
+using IT_ELEC1C_3ITE__GRP6.Data;
 
 namespace IT_ELEC1C_3ITE__GRP6
 {
@@ -20,12 +21,15 @@ namespace IT_ELEC1C_3ITE__GRP6
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<ApplicationDbContext>(options =>
+            services.AddDbContext<AppDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+
 
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
+
 
             services.Configure<IdentityOptions>(options =>
             {
@@ -69,6 +73,7 @@ namespace IT_ELEC1C_3ITE__GRP6
             {
                 options.EnableEndpointRouting = false;
             });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
