@@ -1,6 +1,5 @@
 ﻿body {
-    background-image: url("../images/theme/bg-01.jpg");
-    background-color: #eee;
+    background-color: #081934!important;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -58,7 +57,7 @@
 }
 
 .sectionHeader {
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: #0E2350;
     padding: 10px 20px;
     display: flex;
     flex-direction: column;
@@ -67,7 +66,7 @@
 
 .sectionHeading {
     color: white;
-    font-size: 1.3em;
+    font-size: 1.5em;
     font-family: "Roboto", sans-serif;
     padding: 16px 0 4px;
     margin: 0 0 20px;
@@ -678,7 +677,7 @@
 .userProfile {
     margin-top: 10px;
     padding: 32px 0 64px 24px;
-    background-color: #fff;
+    background-color: ghostwhite;
 }
 
 #userProfileEditImage {
