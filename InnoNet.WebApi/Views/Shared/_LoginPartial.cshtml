@@ -14,9 +14,9 @@
                 <a class="nav-link dropdown-toggle text-light" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                     <img id="pfpIcon" src="~/images/icons/settingsicon.png" alt="settingsicon" style="max-height: 25px; max-width: 25px">
                 </a>
-                <ul class="dropdown-menu dropdownLeft" aria-labelledby="dropdownMenuLink">
+                <ul class="dropdown-menu rounded-3 mt-2" aria-labelledby="dropdownMenuLink">
                     <li>
-                        <a class="dropdown-item" asp-controller="Profile" asp-action="Detail" asp-route-id="@_userManager.GetUserId(User)">My Profile</a>
+                        <a class="dropdown-item rounded-3" asp-controller="Profile" asp-action="Detail" asp-route-id="@_userManager.GetUserId(User)">My Profile</a>
                     </li>
                     @if (User.IsInRole("Admin"))
                     {
