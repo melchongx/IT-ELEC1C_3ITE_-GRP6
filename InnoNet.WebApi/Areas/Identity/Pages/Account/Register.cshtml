@@ -2,36 +2,76 @@
 @model RegisterModel
 @{
     ViewData["Title"] = "Registration";
-    Layout = "~/Areas/Identity/Pages/_AuthLayout.cshtml";
+    Layout = "/Views/Shared/_Layout.cshtml";
 }
-<section>
-    <form id="account" asp-route-returnUrl="@Model.ReturnUrl" method="post">
-        <h4>Create a new account</h4>
-        <hr />
-        <div asp-validation-summary="All" class="text-danger"></div>
-        <div class="form-group">
-            <label asp-for="Input.UserName">Username</label>
-            <input asp-for="Input.UserName" class="form-control" />
-            <span asp-validation-for="Input.UserName" class="text-danger"></span>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Register</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="global.css">
+    <link rel="icon" type="image/x-icon" href="~/images/logos/Logo 1.png">
+</head>
+
+
+    <div class="container-fluid h-custom">
+        <div class="mt-5 row d-flex justify-content-center align-items-center h-100">
+            <div class="col-md-9 col-lg-6 col-xl-5">
+                <img src="~/images/img/inno-logo.png" class="img-fluid mb-5" alt="Sample image">
+            </div>
+            <div class="loginContainer col-lg-6 col-xl-4">
+                <form form id="account" asp-route-returnUrl="@Model.ReturnUrl" class="logins m-0">
+
+                    <h1 class="mb-5 text-center">Register</h1>
+
+                    <div class="row g-3">
+                            <!-- Username input -->
+                            <div class="form-outline mb-3">
+                                <input asp-for="Input.UserName" type="text" id="form3Example3" class="form-control form-control-lg" placeholder="Enter username" />
+                                <label asp-for="Input.UserName"class="form-label" for="form3Example3">Username</label>
+                                <span asp-validation-for="Input.UserName" class="text-danger"></span>
+                            </div>
+   
+                        <!-- Email input -->
+                           <div class="form-outline mb-3">
+                            <input asp-for="Input.Email" id="form3Example3" class="form-control form-control-lg" placeholder="Enter email" />
+                            <label asp-for="Input.Email" class="form-label" for="form3Example3">Email</label>
+                             <span asp-validation-for="Input.Email" class="text-danger"></span>
+                           </div>
+
+
+                            <!-- Password input -->
+                            <div class="form-outline mb-3">
+                            <input asp-for="Input.Password" id="form3Example4" class="form-control form-control-lg" placeholder="Enter password" />
+                            <label asp-for="Input.Password" class="form-label" for="form3Example4">Password</label>
+                            <span asp-validation-for="Input.Password" class="text-danger"></span>
+                            </div>
+
+                            <!-- Confirm Password input -->
+                            <div class="form-outline mb-3">
+                            <input asp-for="Input.ConfirmPassword" id="form3Example4" class="form-control form-control-lg" placeholder="Confirm Password" />
+                            <label asp-for="Input.ConfirmPassword" class="form-label" for="form3Example4">Confirm Password</label>
+                            <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+                            </div>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center">
+
+                        <div class="text-center text-lg-start mt-1 pt-2">
+                            <button type="submit" class="btn btn-primary btn-lg"
+                                    style="padding-left: 2.5rem; padding-right: 2.5rem;">
+                                Register
+                            </button>
+                            <p class="small fw-bold mt-2 pt-1 mb-0">
+                                Already have an account? <a asp-page="./Login" asp-route-returnUrl="@Model.ReturnUrl" class="link-danger">Login</a>
+                            </p>
+                        </div>
+                </form>
+            </div>
         </div>
-        <div class="form-group">
-            <label asp-for="Input.Email">Email</label>
-            <input asp-for="Input.Email" class="form-control" />
-            <span asp-validation-for="Input.Email" class="text-danger"></span>
-        </div>
-        <div class="form-group">
-            <label asp-for="Input.Password">Password</label>
-            <input asp-for="Input.Password" class="form-control" />
-            <span asp-validation-for="Input.Password" class="text-danger"></span>
-        </div>
-        <div class="form-group">
-            <label asp-for="Input.ConfirmPassword">Confirm Password</label>
-            <input asp-for="Input.ConfirmPassword" class="form-control" />
-            <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
-        </div>
-        <button type="submit" class="btn btn-primary btn-submitPost">Register</button>
-    </form>
-</section>
+    </div>
+
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />

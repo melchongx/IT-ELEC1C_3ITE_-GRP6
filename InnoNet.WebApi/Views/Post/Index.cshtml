@@ -27,7 +27,7 @@
             }
             <span class="postDate">@Model.Created</span>
         </div>
-        <div class="col-md-9 postContentContainer">
+        <div class="col-md-9 postContentContainer" style="white-space: pre-line;">
             <div class="postContent">
                 @Html.Raw(Model.PostContent)
             </div>
@@ -81,7 +81,7 @@
                     <span class="postDate">@reply.Created</span>
                 </div>
                 <div class="col-md-9 replyContentContainer">
-                    <div class="postContent">
+                    <div class="postContent" style="white-space: pre-line;">
                         @Html.Raw(reply.ReplyContent)
                     </div>
                     @if (User.Identity.Name == reply.AuthorName || User.IsInRole("Admin"))

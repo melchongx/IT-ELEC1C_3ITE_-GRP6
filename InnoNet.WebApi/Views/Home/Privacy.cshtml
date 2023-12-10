@@ -1,6 +1,35 @@
 ﻿@{
     ViewData["Title"] = "Privacy Policy";
 }
-<h1>@ViewData["Title"]</h1>
+<!-- Add this to the head section of your HTML -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-xrRBUUtrRSJ2x9/J6r7QpgzR8TJKC+eckCpYOa6pgmW9+IbbV5B2AH5j5tQI2z72" crossorigin="anonymous">
 
-<p>Your data is stored on the website and is not sent anywhere.</p>
+<div class="container mt-4">
+    <div class="jumbotron bg-dark text-light">
+        <h1 class="display-4">@ViewData["Title"]</h1>
+        <p class="lead">Your data is important to us, and we take your privacy seriously.</p>
+    </div>
+
+    <div class="row">
+        <div class="col-md-8 text-light">
+            <h2 class="mb-4">Information We Collect</h2>
+            <p>We collect and store the following information:</p>
+            <ul class="list-unstyled">
+                <li><i class="fas fa-user"></i> Your name</li>
+                <li><i class="fas fa-envelope"></i> Email address</li>
+                <!-- Add more information as needed -->
+            </ul>
+
+            <h2 class="mt-4 mb-4">How We Use Your Information</h2>
+            <p>We use the collected information for the following purposes:</p>
+            <ul class="list-unstyled">
+                <li><i class="fas fa-database"></i> Internal record keeping</li>
+                <li><i class="fas fa-lock"></i> Authorization</li>
+                <!-- Add more purposes as needed -->
+            </ul>
+
+            <!-- Add more visually appealing sections as needed -->
+
+        </div>
+    </div>
+</div>
