@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("InnoNet.Service")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+984f4e501aa3128bc5de322b2c439a74d6571b0d")]
 [assembly: System.Reflection.AssemblyProductAttribute("InnoNet.Service")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InnoNet.Service")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

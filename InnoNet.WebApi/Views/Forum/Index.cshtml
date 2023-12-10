@@ -44,6 +44,14 @@
                                             </span>
                                         </a>
                                     }
+                                    @if (User.IsInRole("Admin"))
+                                    {
+                                        <a asp-controller="Forum" asp-action="Delete" asp-route-id="@forum.Id">
+                                            <span class="material-icons deleteButtonRed">
+                                                delete
+                                            </span>
+                                        </a>
+                                    }
                                 </div>
                                 <div class="forumSubTitle">
                                     @if (forum.HasRecentPosts)

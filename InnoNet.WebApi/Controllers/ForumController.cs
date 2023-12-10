@@ -201,4 +201,30 @@ public class ForumController : Controller
 
         return "/images/forum-images/" + uniqueFileName;
     }
+
+    [Authorize(Roles = "Admin")]
+    public async Task<IActionResult> Delete(int id)
+    {
+        var forum = await _forumService.GetById(id);
+        if (forum == null)
+            return RedirectToAction("Error", "Home");
+
+        var model = new DeleteForumModel
+        {
+            Id = forum.Id,
+            Title = forum.Title,
+            Description = forum.Description,
+            ImageUrl = forum.ImageUrl
+        };
+
+        return View(model);
+    }
+
+    [HttpPost]
+    [Authorize(Roles = "Admin")]
+    public async Task<IActionResult> ConfirmDelete(int id)
+    {
+        await _forumService.Delete(id);
+        return RedirectToAction("Index", "Forum");
+    }
 }

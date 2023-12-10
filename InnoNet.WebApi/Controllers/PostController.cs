@@ -49,7 +49,7 @@ public class PostController : Controller
 
         return View(model);
     }
-
+  
     [Authorize]
     public async Task<IActionResult> Archive(int id)
     {
@@ -156,5 +156,31 @@ public class PostController : Controller
             ReplyContent = reply.Content,
             IsAuthorAdmin = IsAuthorAdmin(reply.User)
         });
+    }
+
+    [Authorize]
+    public async Task<IActionResult> Delete(int id)
+    {
+        var post = await _postService.GetById(id);
+        if (post == null)
+            return RedirectToAction("Error", "Home");
+
+        var model = new DeletePostModel
+        {
+
+            Id = post.Id,
+            Title = post.Title,
+            AuthorName = post.User?.UserName
+        };
+
+        return View(model);
+    }
+
+    [HttpPost]
+    [Authorize]
+    public async Task<IActionResult> ConfirmDelete(DeletePostModel model)
+    {
+        await _postService.Delete(model.Id);
+        return RedirectToAction("Index", "Forum"); 
     }
 }

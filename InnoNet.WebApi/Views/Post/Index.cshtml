@@ -39,6 +39,11 @@
                             edit
                         </span>
                     </a>
+                    <a asp-controller="Post" asp-action="Delete" asp-route-id="@Model.Id">
+                        <span class="material-icons deleteButtonRed">
+                            delete
+                        </span>
+                    </a>
                 }
             </div>
         </div>
@@ -89,7 +94,7 @@
                             </a>
                         </div>
                     }
-                    @if (User.IsInRole("Admin"))
+                    @if (User.Identity.Name == reply.AuthorName || User.IsInRole("Admin"))
                     {
                         <div class="btn-delete">
                             <a asp-controller="Reply" asp-action="Delete" asp-route-id="@reply.Id">
