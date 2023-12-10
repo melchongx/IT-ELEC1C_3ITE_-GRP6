@@ -1,0 +1,477 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\InnoNet.WebApi.bundle.scp.css",
+      "PackagePath": "staticwebassets\\InnoNet.WebApi.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\css\\global.css",
+      "PackagePath": "staticwebassets\\css\\global.css"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\css\\useredit.css",
+      "PackagePath": "staticwebassets\\css\\useredit.css"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\images\\forum-images\\76f290f3-838a-41e5-943d-3270d41daf48.jpg",
+      "PackagePath": "staticwebassets\\images\\forum-images\\76f290f3-838a-41e5-943d-3270d41daf48.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\images\\forum-images\\games.png",
+      "PackagePath": "staticwebassets\\images\\forum-images\\games.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\images\\forum-images\\movies.png",
+      "PackagePath": "staticwebassets\\images\\forum-images\\movies.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\images\\forum-images\\music.png",
+      "PackagePath": "staticwebassets\\images\\forum-images\\music.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\images\\images\\IconEye.png",
+      "PackagePath": "staticwebassets\\images\\images\\IconEye.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\images\\images\\WcommentsIcon.png",
+      "PackagePath": "staticwebassets\\images\\images\\WcommentsIcon.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\images\\images\\WdownvoteIcon.png",
+      "PackagePath": "staticwebassets\\images\\images\\WdownvoteIcon.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\images\\images\\WshareIcon.png",
+      "PackagePath": "staticwebassets\\images\\images\\WshareIcon.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\images\\images\\WupvoteIcon.png",
+      "PackagePath": "staticwebassets\\images\\images\\WupvoteIcon.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\images\\images\\alhaithamPNG.png",
+      "PackagePath": "staticwebassets\\images\\images\\alhaithamPNG.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\images\\images\\basicImage.png",
+      "PackagePath": "staticwebassets\\images\\images\\basicImage.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\images\\images\\commentsIcon.png",
+      "PackagePath": "staticwebassets\\images\\images\\commentsIcon.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\images\\images\\cynoPNG.png",
+      "PackagePath": "staticwebassets\\images\\images\\cynoPNG.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\images\\images\\downvoteIcon.png",
+      "PackagePath": "staticwebassets\\images\\images\\downvoteIcon.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\images\\images\\downvotePNG.png",
+      "PackagePath": "staticwebassets\\images\\images\\downvotePNG.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\images\\images\\downvotedIcon.png",
+      "PackagePath": "staticwebassets\\images\\images\\downvotedIcon.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\images\\images\\eyeIcon.png",
+      "PackagePath": "staticwebassets\\images\\images\\eyeIcon.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\images\\images\\faruzanPNG.png",
+      "PackagePath": "staticwebassets\\images\\images\\faruzanPNG.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\images\\images\\imageLogo.png",
+      "PackagePath": "staticwebassets\\images\\images\\imageLogo.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\images\\images\\kavehPNG.png",
+      "PackagePath": "staticwebassets\\images\\images\\kavehPNG.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\images\\images\\messageicon.png",
+      "PackagePath": "staticwebassets\\images\\images\\messageicon.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\images\\images\\nilouPNG.png",
+      "PackagePath": "staticwebassets\\images\\images\\nilouPNG.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\images\\images\\notifbell.png",
+      "PackagePath": "staticwebassets\\images\\images\\notifbell.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\images\\images\\plus-circle.svg",
+      "PackagePath": "staticwebassets\\images\\images\\plus-circle.svg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\images\\images\\postLogo.png",
+      "PackagePath": "staticwebassets\\images\\images\\postLogo.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\images\\images\\settingsicon.png",
+      "PackagePath": "staticwebassets\\images\\images\\settingsicon.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\images\\images\\settingsicon2.png",
+      "PackagePath": "staticwebassets\\images\\images\\settingsicon2.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\images\\images\\shareIcon.png",
+      "PackagePath": "staticwebassets\\images\\images\\shareIcon.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\images\\images\\stonksicon.png",
+      "PackagePath": "staticwebassets\\images\\images\\stonksicon.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\images\\images\\upvoteIcon.png",
+      "PackagePath": "staticwebassets\\images\\images\\upvoteIcon.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\images\\images\\upvotePNG.png",
+      "PackagePath": "staticwebassets\\images\\images\\upvotePNG.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\images\\images\\upvotedIcon.png",
+      "PackagePath": "staticwebassets\\images\\images\\upvotedIcon.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\images\\images\\usericon1.png",
+      "PackagePath": "staticwebassets\\images\\images\\usericon1.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\images\\images\\videoLogo.png",
+      "PackagePath": "staticwebassets\\images\\images\\videoLogo.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\images\\img\\angge.jpg",
+      "PackagePath": "staticwebassets\\images\\img\\angge.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\images\\img\\melfy.jpg",
+      "PackagePath": "staticwebassets\\images\\img\\melfy.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\images\\img\\noel.jpg",
+      "PackagePath": "staticwebassets\\images\\img\\noel.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\images\\img\\rico.jpg",
+      "PackagePath": "staticwebassets\\images\\img\\rico.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\images\\logos\\InnoNet with Logo.png",
+      "PackagePath": "staticwebassets\\images\\logos\\InnoNet with Logo.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\images\\logos\\InnoNet.png",
+      "PackagePath": "staticwebassets\\images\\logos\\InnoNet.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\images\\logos\\Logo 1.png",
+      "PackagePath": "staticwebassets\\images\\logos\\Logo 1.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\images\\logos\\Logo 2.png",
+      "PackagePath": "staticwebassets\\images\\logos\\Logo 2.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\images\\logos\\Networking-PNG.png",
+      "PackagePath": "staticwebassets\\images\\logos\\Networking-PNG.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\images\\profile-images\\admin.png",
+      "PackagePath": "staticwebassets\\images\\profile-images\\admin.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\images\\theme\\bg-01.jpg",
+      "PackagePath": "staticwebassets\\images\\theme\\bg-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\images\\theme\\default.png",
+      "PackagePath": "staticwebassets\\images\\theme\\default.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\images\\theme\\defaultForum.png",
+      "PackagePath": "staticwebassets\\images\\theme\\defaultForum.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\images\\theme\\front-splash.jpg",
+      "PackagePath": "staticwebassets\\images\\theme\\front-splash.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\images\\theme\\sforum-logo.png",
+      "PackagePath": "staticwebassets\\images\\theme\\sforum-logo.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\js\\globaljss.js",
+      "PackagePath": "staticwebassets\\js\\globaljss.js"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\js\\post.js",
+      "PackagePath": "staticwebassets\\js\\post.js"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\asus\\source\\repos\\InnoNet_Forum\\InnoNet.WebApi\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.InnoNet.WebApi.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.InnoNet.WebApi.props",
+      "PackagePath": "build\\InnoNet.WebApi.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.InnoNet.WebApi.props",
+      "PackagePath": "buildMultiTargeting\\InnoNet.WebApi.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.InnoNet.WebApi.props",
+      "PackagePath": "buildTransitive\\InnoNet.WebApi.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
