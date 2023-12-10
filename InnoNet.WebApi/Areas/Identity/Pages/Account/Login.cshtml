@@ -3,44 +3,74 @@
 
 @{
     ViewData["Title"] = "Login";
-    Layout = "~/Areas/Identity/Pages/_AuthLayout.cshtml";
+    Layout = "/Views/Shared/_Layout.cshtml";
 }
-<section>
-    <form id="account" method="post">
-        <h4>Login</h4>
-        <hr />
-        <div asp-validation-summary="All" class="text-danger"></div>
-        <div class="form-group">
-            <label asp-for="Input.UserName">Username</label>
-            <input asp-for="Input.UserName" class="form-control" />
-            <span asp-validation-for="Input.UserName" class="text-danger"></span>
-        </div>
-        <div class="form-group">
-            <label asp-for="Input.Password">Password</label>
-            <input asp-for="Input.Password" class="form-control" />
-            <span asp-validation-for="Input.Password" class="text-danger"></span>
-        </div>
-        <div class="form-group">
-            <div class="checkbox">
-                <label asp-for="Input.RememberMe">
-                    <input asp-for="Input.RememberMe" />
-                    @Html.DisplayNameFor(m => m.Input.RememberMe)
-                </label>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="global.css">
+    <link rel="icon" type="image/x-icon" href="~/images/logos/Logo 1.png">
+</head>
+
+
+    <section class="vh-100">
+        <div class="container-fluid h-custom">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="imageLogoLogin col-md-9 col-lg-6 col-xl-5">
+                    <img src="~/images/img/inno-logo.png" class="img-fluid" alt="Sample image">
+                </div>
+                <div class="loginContainer col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+                    <div asp-validation-summary="All" class="text-danger"></div>
+                    <form class="logins m-0" id="account" method="post">
+
+                        <h1 class="loginText mb-5">Log-In</h1>
+
+                        <!-- User input -->
+                        <div class="form-outline mb-4">
+                            <input asp-for="Input.UserName" id="form3Example3" class="form-control form-control-lg"
+                                   placeholder="Enter username" />
+                            <label asp-for="Input.UserName" class="form-label" for="form3Example3">Username</label>
+                            <span asp-validation-for="Input.UserName" class="text-danger"></span>
+                        </div>
+
+                        <!-- Password input -->
+                        <div class="form-outline mb-3">
+                            <input asp-for="Input.Password" id="form3Example4" class="form-control form-control-lg"
+                                   placeholder="Enter password" />
+                            <label asp-for="Input.Password" class="form-label" for="form3Example4">Password</label>
+                            <span asp-validation-for="Input.Password" class="text-danger"></span>
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center">
+                            <!-- Checkbox -->
+                            <div class="form-check mb-0">
+                                <input asp-for="Input.RememberMe" class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
+                                <label asp-for="Input.RememberMe" class="form-check-label" for="form2Example3">
+                                    @Html.DisplayNameFor(m => m.Input.RememberMe)
+                                </label>
+                            </div>
+                            <br /><a id="forgot-password" asp-page="./ForgotPassword" class="text-body">Forgot password?</a>
+                        </div>
+
+                        <div class="text-center text-lg-start mt-4 pt-2">
+                            <button type="submit" class="btn btn-primary btn-lg"
+                                    style="padding-left: 2.5rem; padding-right: 2.5rem;">
+                                Login
+                            </button>
+                            <p class="small fw-bold mt-2 pt-1 mb-0">
+                                Don't have an account?
+                                <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl" class="link-danger">Register</a>
+                            </p>                          
+                        </div>
+
+                    </form>
+                </div>
             </div>
         </div>
-        <div class="form-group">
-            <button type="submit" class="btn btn-primary btn-submitPost">Login</button>
-        </div>
-        <div class="form-group">
-            <p>
-                <a id="forgot-password" asp-page="./ForgotPassword">Forgot Password?</a>
-            </p>
-            <p>
-                <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Register</a>
-            </p>
-        </div>
-    </form>
-</section>
+    </section>
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
