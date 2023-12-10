@@ -1,0 +1,14 @@
+C:\Users\asus\source\repos\StarForum-main\InnoNet.Data\bin\Release\net6.0\InnoNet.Data.deps.json
+C:\Users\asus\source\repos\StarForum-main\InnoNet.Data\bin\Release\net6.0\InnoNet.Data.runtimeconfig.json
+C:\Users\asus\source\repos\StarForum-main\InnoNet.Data\bin\Release\net6.0\InnoNet.Data.dll
+C:\Users\asus\source\repos\StarForum-main\InnoNet.Data\bin\Release\net6.0\InnoNet.Data.pdb
+C:\Users\asus\source\repos\StarForum-main\InnoNet.Data\obj\Release\net6.0\InnoNet.Data.csproj.AssemblyReference.cache
+C:\Users\asus\source\repos\StarForum-main\InnoNet.Data\obj\Release\net6.0\InnoNet.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\asus\source\repos\StarForum-main\InnoNet.Data\obj\Release\net6.0\InnoNet.Data.AssemblyInfoInputs.cache
+C:\Users\asus\source\repos\StarForum-main\InnoNet.Data\obj\Release\net6.0\InnoNet.Data.AssemblyInfo.cs
+C:\Users\asus\source\repos\StarForum-main\InnoNet.Data\obj\Release\net6.0\InnoNet.Data.csproj.CoreCompileInputs.cache
+C:\Users\asus\source\repos\StarForum-main\InnoNet.Data\obj\Release\net6.0\InnoNet.Data.dll
+C:\Users\asus\source\repos\StarForum-main\InnoNet.Data\obj\Release\net6.0\refint\InnoNet.Data.dll
+C:\Users\asus\source\repos\StarForum-main\InnoNet.Data\obj\Release\net6.0\InnoNet.Data.pdb
+C:\Users\asus\source\repos\StarForum-main\InnoNet.Data\obj\Release\net6.0\InnoNet.Data.genruntimeconfig.cache
+C:\Users\asus\source\repos\StarForum-main\InnoNet.Data\obj\Release\net6.0\ref\InnoNet.Data.dll
