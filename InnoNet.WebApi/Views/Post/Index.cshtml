@@ -6,8 +6,10 @@
 <div class="container body-content">
     <div class="row postHeader">
         <div class="postHeading">
-            <span class="postIndexTitle">
+            <span class="postIndexTitle fw-bold">
+                [
                 @Model.Title
+                ]
             </span>
             <span id="headingBtn">
                 <a asp-controller="Forum" asp-action="Topic" asp-route-id="@Model.ForumId" class="btn btn-back">Back to @Model.ForumName</a>
@@ -46,7 +48,7 @@
     @if (User.Identity.IsAuthenticated && !Model.IsPostArchived)
     {
         <div class="row" id="postReplyRow">
-            <a asp-controller="Reply" asp-action="Create" asp-route-id="@Model.Id" class="btn btn-newReply">Reply</a>
+            <a asp-controller="Reply" asp-action="Create" asp-route-id="@Model.Id" class="btn btn-newReply mx-auto ">Reply</a>
         </div>
     }
     else
@@ -62,7 +64,7 @@
     {
         foreach (var reply in Model.Replies)
         {
-            <div class="row replyContent">
+            <div class="row replyContent mx-auto container-md ">
                 <div class="col-md-3 replyAuthorContainer">
                     <div class="postAuthorImage" style="background-image: url(@reply.AuthorImageUrl)"></div>
                     <a asp-controller="Profile" asp-action="Detail" asp-route-id="@reply.AuthorId">

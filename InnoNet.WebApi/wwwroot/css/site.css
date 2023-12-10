@@ -79,6 +79,7 @@
     font-family: "Roboto", sans-serif;
     padding: 16px 0;
     width: 100%;
+    border-radius: 10px
 }
 
 .sectionInfo {
@@ -330,7 +331,9 @@
 }
 
 .postHeader {
-    background-color: #212121;
+    background-color: #0E2350;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
     padding: 9px 20px 24px 24px;
 }
 
@@ -507,13 +510,16 @@
 .replyContent {
     display: table;
     background-color: #fff;
-    border-bottom: 1px solid #aaa;
+    margin-bottom: 10px;
+    border-radius: 15px;
 }
 
 #postReplyRow {
     background-color: #212121;
     padding: 8px;
     opacity: 0.7;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.3);
 }
 
@@ -623,18 +629,19 @@
 }
 
 .btn-newReply {
-    background: #fff !important;
+    background: #FFA756 !important;
     color: #212121 !important;
-    transition: 0.8s;
+    transition: 0.1s;
     border: 0 !important;
-    border-radius: 0 !important;
+    border-radius: 10px !important;
+    width: 50%;
 }
 
-.btn-newReply:hover {
-    background-color: #95a5a6 !important;
-    color: #fff !important;
-    transition: cubic-bezier(.23, 1.45, .66, .21) 1s;
-}
+    .btn-newReply:hover {
+        background-color: #F9943B !important;
+        color: #000 !important;
+        transition: cubic-bezier(.23, 1.45, .66, .21) 1s;
+    }
 
 .btn-submitPost {
     background: none !important;
