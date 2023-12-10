@@ -24,12 +24,9 @@ public class PostReplyService : IPostReply
         await _unitOfWork.Commit();
     }
 
-    public async Task Edit(int id, string content)
+    public async Task Edit(PostReply existingReply)
     {
-        var reply = await GetById(id);
-        if (reply == null) return;
-        if (string.IsNullOrEmpty(content)) reply.Content = content;
-        _context.Update(reply);
+        _context.Update(existingReply);
         await _unitOfWork.Commit();
     }
 

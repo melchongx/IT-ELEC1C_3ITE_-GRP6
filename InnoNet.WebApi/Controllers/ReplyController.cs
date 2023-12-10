@@ -4,6 +4,7 @@ using InnoNet.WebApi.Models.Reply;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace InnoNet.WebApi.Controllers;
 
@@ -78,19 +79,66 @@ public class ReplyController : Controller
     [HttpPost]
     public async Task<IActionResult> EditReply(EditPostReplyModel model)
     {
-        await _replyService.Edit(model.ReplyId, model.Content);
+        var existingReply = await _replyService.GetById(model.ReplyId);
+
+        if (existingReply == null)
+        {
+            // Handle the case where the reply is not found
+            return RedirectToAction("Error", "Home");
+        }
+
+        // Check if the current user has the right permissions to edit the reply
+        if (!User.IsInRole("Admin") && existingReply.User.UserName != User.Identity.Name)
+        {
+            // Handle unauthorized access
+            return RedirectToAction("Error", "Home");
+        }
+
+        // Update the reply content
+        existingReply.Content = model.Content;
+
+        // Save the changes
+        await _replyService.Edit(existingReply);
+
         return RedirectToAction("Index", "Post", new { id = model.PostId });
     }
 
     [Authorize]
     public async Task<IActionResult> Delete(int id)
     {
-        await _replyService.Delete(id);
         var reply = await _replyService.GetById(id);
-        return reply == null
-            ? RedirectToAction("Error", "Home")
-            : RedirectToAction("Index", "Post", new { id = reply.Post.Id });
+        if (reply == null)
+            return RedirectToAction("Error", "Home");
+
+        var model = new DeleteReplyModel
+        {
+            Id = reply.Id,
+            AuthorName = reply.User?.UserName ?? "ForumAdmin",
+            Content = reply.Content,
+            PostId = reply.Post?.Id ?? 0,
+            PostTitle = reply.Post.Title
+        };
+
+        return View(model);
     }
+
+    [HttpPost]
+    [Authorize]
+    public async Task<IActionResult> ConfirmDelete(int id)
+    {
+        var reply = await _replyService.GetById(id);
+
+        if (reply == null)
+            return RedirectToAction("Error", "Home"); // or handle the error in another way
+
+        var postId = reply.Post.Id;
+
+        await _replyService.Delete(id);
+
+        return RedirectToAction("Index", "Post", new { id = postId });
+    }
+
+
 
     private async Task<PostReply> BuildReply(PostReplyModel model, ApplicationUser user)
     {

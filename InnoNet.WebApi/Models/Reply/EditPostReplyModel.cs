@@ -7,4 +7,5 @@ public class EditPostReplyModel
     public int ReplyId { get; set; }
     public string AuthorName { get; set; }
     public string Content { get; set; }
+
 }
