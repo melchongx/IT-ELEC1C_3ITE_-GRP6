@@ -1,0 +1,15 @@
+C:\Users\asus\source\repos\StarForum-main\InnoNet.Service\bin\Release\net6.0\InnoNet.Service.deps.json
+C:\Users\asus\source\repos\StarForum-main\InnoNet.Service\bin\Release\net6.0\InnoNet.Service.dll
+C:\Users\asus\source\repos\StarForum-main\InnoNet.Service\bin\Release\net6.0\InnoNet.Service.pdb
+C:\Users\asus\source\repos\StarForum-main\InnoNet.Service\bin\Release\net6.0\InnoNet.Data.dll
+C:\Users\asus\source\repos\StarForum-main\InnoNet.Service\bin\Release\net6.0\InnoNet.Data.pdb
+C:\Users\asus\source\repos\StarForum-main\InnoNet.Service\obj\Release\net6.0\InnoNet.Service.csproj.AssemblyReference.cache
+C:\Users\asus\source\repos\StarForum-main\InnoNet.Service\obj\Release\net6.0\InnoNet.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\asus\source\repos\StarForum-main\InnoNet.Service\obj\Release\net6.0\InnoNet.Service.AssemblyInfoInputs.cache
+C:\Users\asus\source\repos\StarForum-main\InnoNet.Service\obj\Release\net6.0\InnoNet.Service.AssemblyInfo.cs
+C:\Users\asus\source\repos\StarForum-main\InnoNet.Service\obj\Release\net6.0\InnoNet.Service.csproj.CoreCompileInputs.cache
+C:\Users\asus\source\repos\StarForum-main\InnoNet.Service\obj\Release\net6.0\InnoNet.Service.csproj.CopyComplete
+C:\Users\asus\source\repos\StarForum-main\InnoNet.Service\obj\Release\net6.0\InnoNet.Service.dll
+C:\Users\asus\source\repos\StarForum-main\InnoNet.Service\obj\Release\net6.0\refint\InnoNet.Service.dll
+C:\Users\asus\source\repos\StarForum-main\InnoNet.Service\obj\Release\net6.0\InnoNet.Service.pdb
+C:\Users\asus\source\repos\StarForum-main\InnoNet.Service\obj\Release\net6.0\ref\InnoNet.Service.dll
