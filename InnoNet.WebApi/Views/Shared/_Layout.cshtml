@@ -7,35 +7,33 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     @* <link rel="stylesheet" href="~/css/useredit.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/global.css" asp-append-version="true" /> *@ 
+    <link rel="stylesheet " href="~/css/global.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="global.css" rel="stylesheet>
     <script src="~/js/globaljss.js"></script>
     <link rel="icon" type="image/x-icon" href="../logos/Logo 1.png">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">InnoNet</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Forum" asp-action="Index">All Categories</a>
-                        </li>
+        <div class="content-container">
+            <header>
+                <img id="logoIcon" src="~/images/logos/Logo 1.png" alt="Logo InnoNet">
+                <img id="logoIcon" src="~/images/logos/InnoNet.png" alt="InnoNet">
+                <nav id="leftbar">
+                    <ul>
+                        <li data-toggle="tooltip" data-placement="bottom" title="Home"><a asp-action="Index" asp-controller="Home">Home</a></li>
+                        <li data-toggle="tooltip" data-placement="bottom" title="About"><a asp-action="About">About Us</a></li>
+                        <li data-toggle="tooltip" data-placement="bottom" title="Clubs"><a asp-action="Index" asp-controller="Forum">All Categories</a></li>
                     </ul>
-                    <partial name="_LoginPartial" />
+                </nav>
+                <div id="searchBar" class="btn-group dropstart">
+                    <!--magugulo layout pagka tinanggal to-->
                 </div>
-            </div>
-        </nav>
+                <nav id="rightbar">
+                    <partial name="_LoginPartial" />
+                </nav>
+        </div>
     </header>
     <div class="container">
         <main role="main" class="pb-3">
