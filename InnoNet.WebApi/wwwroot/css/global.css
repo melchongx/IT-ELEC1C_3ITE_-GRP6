@@ -42,7 +42,7 @@ body{
   .content-container {
     position: relative;
     z-index: 1; /* Place it above the background */
-    padding: 20px; /* Adjust as needed */
+    padding: 10px; /* Adjust as needed */
   }
 
 /* header */
