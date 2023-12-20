@@ -23,12 +23,12 @@
                 <form asp-action="CreatePost" method="post" id="addPostForm">
                     <div asp-validation-summary="All" class="text-danger"></div>
                     <div class="form-group">
-                        <label asp-for="Title">Title</label>
-                        <input asp-for="Title" class="form-control" required placeholder="Title" maxlength="100" />
+                        <label asp-for="Title" class="text-light">Title</label>
+                        <input asp-for="Title" class="form-control fw-bold" required placeholder="Title" maxlength="100" />
                         <span asp-validation-for="Title" class="text-danger"></span>
                     </div>
                     <div class="form-group">
-                        <label asp-for="Content">Description</label>
+                        <label asp-for="Content" class="text-light">Description</label>
                         <textarea asp-for="Content" rows="10" class="form-control" required placeholder="Describe your post here..."></textarea>
                         <span asp-validation-for="Content" class="text-danger"></span>
                     </div>

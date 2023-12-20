@@ -71,10 +71,22 @@ public class HomeController : Controller
                 HasRecentPosts = await _forumService.HasRecentPost(forum.Id)
             }).Select(t => t.Result);
 
+
+        var postIndexModels = latestPosts.Select(postIndex => new PostIndexModel
+        {
+            Id = postIndex.Id,
+            Title = postIndex.Title,
+            AuthorId = postIndex.User.Id,
+            PostContent = postIndex.Content,
+            AuthorImageUrl = postIndex.User.ProfileImageUrl
+
+        });
+
         return new HomeIndexModel
         {
             LatestPosts = posts,
             PopularForums = forums,
+            Posts = postIndexModels,
             SearchQuery = ""
         };
     }
@@ -90,3 +102,5 @@ public class HomeController : Controller
         };
     }
 }
+
+

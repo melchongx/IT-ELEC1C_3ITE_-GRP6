@@ -3,80 +3,178 @@
     ViewData["Title"] = "Categories";
 }
 
-<div class="container body-content">
-    <div class="row sectionHeader">
-        <div class="sectionHeading">
-            <span id="results">Categories</span>
-            @if (User.IsInRole("Admin"))
-            {
-                <span id="headingBtn">
-                    <a asp-controller="Forum" asp-action="Create" class="btn btn-newPost">Create Category</a>
-                </span>
-            }
-        </div>
-        <div class="sectionDescription">
-            <p>Welcome to <strong>InnoNet</strong>. Topics are classified into separate categories based on interests.</p>
-            <p>
-                Please read the rules before creating a topic.
-                @if (!User.Identity.IsAuthenticated)
-                {
-                    <span>You must be a <a asp-area="Identity" asp-page="/Account/Register">registered</a> user to create a topic.</span>
-                }
-            </p>
-        </div>
+<div id="containerHome" class="container">
+    <div id="MainBar">
+        <section class="mainBar">
+            <h1>Categories</h1>
+            <table class="table table-hover" id="latestPostsTable">
+                <tbody>
+                    @foreach (var forum in Model.ForumList)
+                    {
+                        <tr>
+                            <td>
+                                <section class="postFront">
+
+                                    <h4>
+                                        <img id="profilePicture" src="@forum.ImageUrl" alt="Author Image">
+                                        <a asp-controller="Forum" asp-action="Topic" asp-route-id="@forum.Id" id="forumTitle">
+                                            @forum.Name
+                                        </a>
+                                        @if (User.IsInRole("Admin"))
+                                        {
+                                            <a asp-controller="Forum" asp-action="Edit" asp-route-id="@forum.Id">
+                                                <span class="material-icons editIcon editForum">
+                                                    edit
+                                                </span>
+                                            </a>
+                                        }
+                                    </h4>
+                                    <div class="forumSubTitle">
+                                        @if (forum.HasRecentPosts)
+                                        {
+                                            <div class="hasRecentPost">Hot</div>
+                                        }
+                                    </div>
+
+                                    <div class="postText">
+                                        @forum.Description
+                                    </div>
+
+
+                                    <div class="postSubTitle">
+
+                                        @if (forum.NumberOfPosts == 0)
+                                        {
+                                            <span class="comment-counter"><img src="~/images/icons/messageIcon.png" alt="messageIcon" id="icons"> No posts</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="comment-counter"><img src="~/images/icons/messageIcon.png" alt="messageIcon" id="icons"> @forum.NumberOfPosts</span>
+                                        }
+
+                                        @if (forum.NumberOfUsers == 0)
+                                        {
+                                            <span class="comment-counter"><img src="~/images/icons/usericon1.png" alt="messageIcon" id="icons"> No users</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="comment-counter"><img src="~/images/icons/usericon1.png" alt="messageIcon" id="icons"> @forum.NumberOfUsers</span>
+                                        }
+
+
+                                        @*                                         <span class="upvote-counter"><img src="~/images/icons/upvoteIcon.png" alt="upvoteIcon" id="icons"> 12.1k</span>
+                                    <span class="downvote-counter"><img src="~/images/icons/downvoteIcon.png" alt="downvoteIcon" id="icons"> 576</span>
+                                    <span class="share-counter"><img src="~/images/icons/shareIcon.png" alt="shareIcon" id="icons"> 576</span> *@
+                                    </div>
+                                </section>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </section>
+
     </div>
-    <div class="row" id="forumIndexContent">
-        <table class="table table-hover table-bordered" id="forumIndexTable">
-            <tbody>
-                @foreach (var forum in Model.ForumList)
-                {
-                    <tr>
-                        <td>
-                            <div class="forumLogo" style="background-image: url(@forum.ImageUrl)"></div>
-                            <div class="forumData">
-                                <div class="forumTitle">
-                                    <a asp-controller="Forum" asp-action="Topic" asp-route-id="@forum.Id">@forum.Name</a>
-                                    @if (User.IsInRole("Admin"))
-                                    {
-                                        <a asp-controller="Forum" asp-action="Edit" asp-route-id="@forum.Id">
-                                            <span class="material-icons editIcon editForum">
-                                                edit
-                                            </span>
-                                        </a>
-                                    }
-                                    @if (User.IsInRole("Admin"))
-                                    {
-                                        <a asp-controller="Forum" asp-action="Delete" asp-route-id="@forum.Id">
-                                            <span class="material-icons deleteButtonRed">
-                                                delete
-                                            </span>
-                                        </a>
-                                    }
-                                </div>
-                                <div class="forumSubTitle">
-                                    @if (forum.HasRecentPosts)
-                                    {
-                                        <div class="hasRecentPost">Hot</div>
-                                    }
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="forumPostCount">
-                                @forum.NumberOfPosts Posts
-                            </div>
-                            <div class="forumMemberCount">
-                                @forum.NumberOfUsers Users
-                            </div>
-                        </td>
-                        <td class="tdDisplayNone">
-                            <div class="forumDescription">
-                                @forum.Description
-                            </div>
-                        </td>
-                    </tr>
-                }
-            </tbody>
-        </table>
+
+
+    <div id="sidebarInnoNet">
+        <div id="sidebar-one">
+            <hr>
+            <section class="trendsBar">
+                <h4><img src="~/images/icons/stonksicon.png" alt="stonksicon" id="sidebarIcon">Categories Page</h4>
+
+                <hr />
+                <table class="table table-hover" id="popularForumsTable">
+
+                    <tbody>
+
+                        <div class="sectionDescription">
+                            <p>Welcome to <strong>InnoNet</strong>. Topics are classified into separate categories based on interests.</p>
+                            <p>
+                                Please read the rules before creating a topic.
+                                @if (!User.Identity.IsAuthenticated)
+                                {
+                                    <span>You must be a <a asp-area="Identity" asp-page="/Account/Register">registered</a> user to create a topic.</span>
+                                }
+                            </p>
+                            @if (User.IsInRole("Admin"))
+                            {
+                                <span id="headingBtn">
+                                    <a asp-controller="Forum" asp-action="Create" class="btn btn-newPost">Create Category</a>
+                                </span>
+                            }
+                        </div>
+                    </tbody>
+                </table>
+
+            </section>
+        </div>
+        <div id="sidebar-two">
+            <section class="followUsers">
+                <h2>Users to Follow</h2>
+                <hr>
+                <section id="usercardFollow">
+
+                    <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                        <a href="#"><img id="icons" src="~/images/icons/usericon1.png" alt="usertofollow"></a>
+                        <h5 style="margin-left: 10px; margin-right: auto;">User Testing</h5>
+                        <a href="#"><img id="iconsplus" src="~/images/icons/plus-circle.svg" alt="add icon" style="margin-left: auto;"></a>
+                    </div>
+                    <section>
+                        <a href="#"><img src="~/images/icons//basicImage.png" alt="followimg" class="userFollowImg"></a>
+                        <a href="#"><img src="~/images/icons//basicImage.png" alt="followimg" class="userFollowImg"></a>
+                        <a href="#"><img src="~/images/icons//basicImage.png" alt="followimg" class="userFollowImg"></a>
+                        <a href="#"><img src="~/images/icons//basicImage.png" alt="followimg" class="userFollowImg"></a>
+                    </section>
+                </section>
+                <hr>
+                <section id="usercardFollow">
+                    <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                        <a href="#"><img id="icons" src="~/images/icons//usericon1.png" alt="usertofollow"></a>
+                        <h5 style="margin-left: 10px; margin-right: auto;">User Testing</h5>
+                        <a href="#"><img id="iconsplus" src="~/images/icons//plus-circle.svg" alt="add icon" style="margin-left: auto;"></a>
+                    </div>
+                    <section>
+                        <a href="#"><img src="~/images/icons//basicImage.png" alt="followimg" class="userFollowImg"></a>
+                        <a href="#"><img src="~/images/icons//basicImage.png" alt="followimg" class="userFollowImg"></a>
+                        <a href="#"><img src="~/images/icons//basicImage.png" alt="followimg" class="userFollowImg"></a>
+                        <a href="#"><img src="~/images/icons//basicImage.png" alt="followimg" class="userFollowImg"></a>
+                    </section>
+                </section>
+                <hr>
+                <section id="usercardFollow">
+                    <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                        <a href="#"><img id="icons" src="~/images/icons//usericon1.png" alt="usertofollow"></a>
+                        <h5 style="margin-left: 10px; margin-right: auto;">User Testing</h5>
+                        <a href="#"><img id="iconsplus" src="~/images/icons//plus-circle.svg" alt="add icon" style="margin-left: auto;"></a>
+                    </div>
+
+
+                    <section>
+                        <a href="#"><img src="~/images/icons//basicImage.png" alt="followimg" class="userFollowImg"></a>
+                        <a href="#"><img src="~/images/icons//basicImage.png" alt="followimg" class="userFollowImg"></a>
+                        <a href="#"><img src="~/images/icons//basicImage.png" alt="followimg" class="userFollowImg"></a>
+                        <a href="#"><img src="~/images/icons//basicImage.png" alt="followimg" class="userFollowImg"></a>
+                    </section>
+                </section>
+                <hr>
+                <section id="usercardFollow">
+                    <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                        <a href="#"><img id="icons" src="~/images/icons//usericon1.png" alt="usertofollow"></a>
+                        <h5 style="margin-left: 10px; margin-right: auto;">User Testing</h5>
+                        <a href="#"><img id="iconsplus" src="~/images/icons//plus-circle.svg" alt="add icon" style="margin-left: auto;"></a>
+                    </div>
+                    <section>
+                        <a href="#"><img src="~/images/icons//basicImage.png" alt="followimg" class="userFollowImg"></a>
+                        <a href="#"><img src="~/images/icons//basicImage.png" alt="followimg" class="userFollowImg"></a>
+                        <a href="#"><img src="~/images/icons//basicImage.png" alt="followimg" class="userFollowImg"></a>
+                        <a href="#"><img src="~/images/icons//basicImage.png" alt="followimg" class="userFollowImg"></a>
+                    </section>
+                </section>
+                <hr>
+            </section>
+
+        </div>
+
     </div>
 </div>

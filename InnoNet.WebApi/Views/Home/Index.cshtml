@@ -3,90 +3,169 @@
     ViewData["Title"] = "Home";
 }
 
-<div class="container body-content">
-    <div class="row frontPageSplash">
-        <div class="col-md-6 frontPageLearn">
-            <div class="frontPageHeading">Welcome</div>
-            <div>
-                <p class="frontPageSubHeading">InnoNet - Innovative Forum Discussion</p>
-            </div>
-            <div>
-                <form asp-controller="Search" asp-action="Search" method="post">
-                    <input asp-for="SearchQuery" type="text" class="homeSearch" placeholder="Search..." />
-                </form>
-            </div>
+<main>
+    <div id="containerHome" class="container">
+        <div id="MainBar">
+            <section class="mainBar">
+                <h1>News Feed</h1>
+                <table class="table table-hover" id="latestPostsTable">
+                    <tbody>
+                        @foreach (var post in Model.LatestPosts)
+                        {
+                            var correspondingPost = Model.Posts.FirstOrDefault(p => p.Id == post.Id);
+                            <tr>
+                                <td>
+                                    <section class="postFront">
+                                        <a asp-controller="Profile" asp-action="Detail" asp-route-id="@post.AuthorId">
+                                            <img id="profilePicture" src="@correspondingPost.AuthorImageUrl" alt="Author Image">
+                                            @post.Author
+                                        </a>
+
+                                        <h4>
+                                            <a asp-controller="Post" asp-action="Index" asp-route-id="@post.Id">
+                                                @post.Title
+                                            </a>
+                                        </h4>
+
+                                        @if (correspondingPost != null)
+                                        {
+                                            <div class="postText">
+                                                @correspondingPost.PostContent
+                                            </div>
+                                        }
+
+                                        <div class="postSubTitle">
+                                            @if (post.RepliesCount == 0)
+                                            {
+                                                <span class="comment-counter"><img src="~/images/icons/commentsIcon.png" alt="messageIcon" id="icons"> No replies</span>
+                                            }
+                                            else
+                                            {
+                                                <span class="comment-counter"><img src="~/images/icons/commentsIcon.png" alt="messageIcon" id="icons"> @post.RepliesCount</span>
+                                            }
+                                        
+                                        
+@*                                         <span class="upvote-counter"><img src="~/images/icons/upvoteIcon.png" alt="upvoteIcon" id="icons"> 12.1k</span>
+                                        <span class="downvote-counter"><img src="~/images/icons/downvoteIcon.png" alt="downvoteIcon" id="icons"> 576</span>
+                                        <span class="share-counter"><img src="~/images/icons/shareIcon.png" alt="shareIcon" id="icons"> 576</span> *@
+                                        </div>
+                                    </section>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </section>
+
         </div>
-        <div class="col-md-6">
+        <div id="sidebarInnoNet">
+            <div id="sidebar-one">
+                <section class="ideasShare">
+                    <h4>Search</h4>
+                    <form asp-controller="Search" asp-action="Search" method="post">
+                        <input asp-for="SearchQuery" type="text" id="searchBar" placeholder="Search..." />
+                    </form>
+                </section>
+                <hr>
+                <section class="trendsBar">
+                        <h4><img src="~/images/icons/stonksicon.png" alt="stonksicon" id="sidebarIcon">What's Trending</h4>
+                        <hr />
+                        <table class="table table-hover" id="popularForumsTable">
+                            <tbody>
+                                @foreach (var forum in Model.PopularForums)
+                                {
+                                    <tr>
+                                        <td>
+                                            <a asp-controller="Forum" asp-action="Topic" asp-route-id="@forum.Id" id="Trending">
+                                            <div class="forumLogo" style="background-image: url(@forum.ImageUrl)"></div>
+                                                <div class="forumData">
+                                                
+                                                    <h5>@forum.Name</h5>
+                                                    <h6>@forum.NumberOfPosts Topics</h6>
+
+                                                <div class="forumSubTitle">
+                                                    @if (forum.HasRecentPosts)
+                                                    {
+                                                        <div class="hasRecentPost">Hot</div>
+                                                    }
+                                                </div>
+                                                </div>
+                                             </a>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+
+                </section>
+            </div>
+            <div id="sidebar-two">
+                <section class="followUsers">
+                    <h2>Users to Follow</h2>
+                    <hr>
+                    <section id="usercardFollow">
+
+                        <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                            <a href="#"><img id="icons" src="~/images/icons/usericon1.png" alt="usertofollow"></a>
+                            <h5 style="margin-left: 10px; margin-right: auto;">User Testing</h5>
+                            <a href="#"><img id="iconsplus" src="~/images/icons/plus-circle.svg" alt="add icon" style="margin-left: auto;"></a>
+                        </div>
+                        <section>
+                            <a href="#"><img src="~/images/icons//basicImage.png" alt="followimg" class="userFollowImg"></a>
+                            <a href="#"><img src="~/images/icons//basicImage.png" alt="followimg" class="userFollowImg"></a>
+                            <a href="#"><img src="~/images/icons//basicImage.png" alt="followimg" class="userFollowImg"></a>
+                            <a href="#"><img src="~/images/icons//basicImage.png" alt="followimg" class="userFollowImg"></a>
+                        </section>
+                    </section>
+                    <hr>
+                    <section id="usercardFollow">
+                        <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                            <a href="#"><img id="icons" src="~/images/icons//usericon1.png" alt="usertofollow"></a>
+                            <h5 style="margin-left: 10px; margin-right: auto;">User Testing</h5>
+                            <a href="#"><img id="iconsplus" src="~/images/icons//plus-circle.svg" alt="add icon" style="margin-left: auto;"></a>
+                        </div>
+                        <section>
+                            <a href="#"><img src="~/images/icons//basicImage.png" alt="followimg" class="userFollowImg"></a>
+                            <a href="#"><img src="~/images/icons//basicImage.png" alt="followimg" class="userFollowImg"></a>
+                            <a href="#"><img src="~/images/icons//basicImage.png" alt="followimg" class="userFollowImg"></a>
+                            <a href="#"><img src="~/images/icons//basicImage.png" alt="followimg" class="userFollowImg"></a>
+                        </section>
+                    </section>
+                    <hr>
+                    <section id="usercardFollow">
+                        <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                            <a href="#"><img id="icons" src="~/images/icons//usericon1.png" alt="usertofollow"></a>
+                            <h5 style="margin-left: 10px; margin-right: auto;">User Testing</h5>
+                            <a href="#"><img id="iconsplus" src="~/images/icons//plus-circle.svg" alt="add icon" style="margin-left: auto;"></a>
+                        </div>
+
+
+                        <section>
+                            <a href="#"><img src="~/images/icons//basicImage.png" alt="followimg" class="userFollowImg"></a>
+                            <a href="#"><img src="~/images/icons//basicImage.png" alt="followimg" class="userFollowImg"></a>
+                            <a href="#"><img src="~/images/icons//basicImage.png" alt="followimg" class="userFollowImg"></a>
+                            <a href="#"><img src="~/images/icons//basicImage.png" alt="followimg" class="userFollowImg"></a>
+                        </section>
+                    </section>
+                    <hr>
+                    <section id="usercardFollow">
+                        <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                            <a href="#"><img id="icons" src="~/images/icons//usericon1.png" alt="usertofollow"></a>
+                            <h5 style="margin-left: 10px; margin-right: auto;">User Testing</h5>
+                            <a href="#"><img id="iconsplus" src="~/images/icons//plus-circle.svg" alt="add icon" style="margin-left: auto;"></a>
+                        </div>
+                        <section>
+                            <a href="#"><img src="~/images/icons//basicImage.png" alt="followimg" class="userFollowImg"></a>
+                            <a href="#"><img src="~/images/icons//basicImage.png" alt="followimg" class="userFollowImg"></a>
+                            <a href="#"><img src="~/images/icons//basicImage.png" alt="followimg" class="userFollowImg"></a>
+                            <a href="#"><img src="~/images/icons//basicImage.png" alt="followimg" class="userFollowImg"></a>
+                        </section>
+                    </section>
+                    <hr>
+                </section>
+
+            </div>
+
         </div>
     </div>
-    <div class="row frontPageContent">
-        <h3 id="popularForums">POPULAR CATEGORIES</h3>
-        <table class="table table-hover" id="popularForumsTable">
-            <tbody>
-                @foreach (var forum in Model.PopularForums)
-                {
-                    <tr>
-                        <td>
-                            <div class="forumLogo" style="background-image: url(@forum.ImageUrl)"></div>
-                            <div class="forumData">
-                                <div class="forumTitle">
-                                    <a asp-controller="Forum" asp-action="Topic" asp-route-id="@forum.Id">@forum.Name</a>
-                                </div>
-                                <div class="forumSubTitle">
-                                    @if (forum.HasRecentPosts)
-                                    {
-                                        <div class="hasRecentPost">Hot</div>
-                                    }
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="forumPostCount">
-                                @forum.NumberOfPosts Topics
-                            </div>
-                        </td>
-                        <td class="tdDisplayNone">
-                            <div class="forumDescription">
-                                @forum.Description
-                            </div>
-                        </td>
-                    </tr>
-                }
-            </tbody>
-        </table>
-    </div>
-    <div class="row frontPageContent">
-        <h3 id="latestPosts">LATEST TOPICS</h3>
-        <table class="table table-hover" id="latestPostsTable">
-            <tbody>
-                @foreach (var post in Model.LatestPosts)
-                {
-                    <tr>
-                        <td>
-                            <div class="forumLogo" style="background-image: url(@post.Forum.ImageUrl)">
-                            </div>
-                            <div class="postTitle">
-                                <a asp-controller="Post" asp-action="Index" asp-route-id="@post.Id">
-                                    @post.Title
-                                </a>
-                            </div>
-                            <div class="postSubTitle">
-                                @if (post.RepliesCount == 0)
-                                {
-                                    <span>No replies</span>
-                                }
-                                else
-                                {
-                                    <span>@post.RepliesCount replies</span>
-                                }
-                                <span class="postUser">
-                                    <a asp-controller="Profile" asp-action="Detail" asp-route-id="@post.AuthorId">@post.Author</a>
-                                </span>
-                            </div>
-                        </td>
-                    </tr>
-                }
-            </tbody>
-        </table>
-    </div>
-</div>
+</main>

@@ -8,4 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = InnoNet.Data
-build_property.ProjectDir = C:\Users\Melfred\source\repos\IT-ELEC1C_3ITE_-GRP6\InnoNet.Data\
+build_property.ProjectDir = C:\Users\Sensei\Documents\GitHub\IT-ELEC1C_3ITE_-GRP6\InnoNet.Data\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
